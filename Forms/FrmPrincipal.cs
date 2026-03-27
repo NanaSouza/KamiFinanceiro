@@ -19,6 +19,43 @@ namespace Financeiro_teste.Forms
         {
             InitializeComponent();
             db = new DatabaseHelper();
+            CarregarSaldoAtual();
+        }
+        private void InitializaComponent()
+        {
+            this.Text = "Sistema Financeiro - KamiKami";
+            this.WindowState = FormWindowState.Maximized;
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            //Menu Principal   
+            MenuStrip menuStrip = new MenuStrip();
+
+            //Menu Vendas
+            ToolStripMenuItem menuVendas = new ToolStripMenuItem("Vendas");
+
+            ToolStripMenuItem novaVenda = new ToolStripMenuItem("Nova Venda");
+
+            ToolStripMenuItem historicoVendas = new ToolStripMenuItem("Histórico de Vendas");
+
+            novaVenda.Click += NovaVenda_Click;
+
+            historicoVendas.Click += HistoricoVendas_Click;
+
+            menuVendas.DropDownItems.AddRange(new ToolStripMenuItem[] { novaVenda, historicoVendas });
+
+            //Menu Financeiro
+
+            ToolStripMenuItem menuFinanceiro = new ToolStripMenuItem("Financeiro");
+
+            ToolStripMenuItem despesas = new ToolStripMenuItem("Registrar Despesas");
+
+            ToolStripMenuItem relatorios = new ToolStripMenuItem("Relatórios");
+
+            despesas.Click += Despesas_Click;
+
+            relatorios.Click += Relatorios_Click;
+
+            menuFinanceiro.DropDownItems.AddRange(new ToolStripMenuItem[] { despesas, relatorios });
         }
     }
 }
