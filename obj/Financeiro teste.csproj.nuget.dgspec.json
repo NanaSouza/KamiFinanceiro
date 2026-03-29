@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nana\\source\\repos\\KamiFinanceiro\\Financeiro teste.csproj": {}
+    "C:\\Users\\Nana\\Source\\Repos\\KamiFinanceiro\\Financeiro teste.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nana\\source\\repos\\KamiFinanceiro\\Financeiro teste.csproj": {
+    "C:\\Users\\Nana\\Source\\Repos\\KamiFinanceiro\\Financeiro teste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nana\\source\\repos\\KamiFinanceiro\\Financeiro teste.csproj",
+        "projectUniqueName": "C:\\Users\\Nana\\Source\\Repos\\KamiFinanceiro\\Financeiro teste.csproj",
         "projectName": "Financeiro teste",
-        "projectPath": "C:\\Users\\Nana\\source\\repos\\KamiFinanceiro\\Financeiro teste.csproj",
+        "projectPath": "C:\\Users\\Nana\\Source\\Repos\\KamiFinanceiro\\Financeiro teste.csproj",
         "packagesPath": "C:\\Users\\Nana\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Nana\\Source\\Repos\\KamiFinanceiro\\obj\\",
         "projectStyle": "PackageReference",

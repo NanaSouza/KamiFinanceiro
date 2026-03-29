@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KNgxGv1ySwk=",
+  "dgSpecHash": "aBWVjhwnAiY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nana\\source\\repos\\KamiFinanceiro\\Financeiro teste.csproj",
+  "projectFilePath": "C:\\Users\\Nana\\Source\\Repos\\KamiFinanceiro\\Financeiro teste.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nana\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\Nana\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",
