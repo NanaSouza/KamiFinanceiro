@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\",
+  "WorkspaceRootPath": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|c:\\users\\nana\\source\\repos\\financeiro teste\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,6 +38,42 @@
     {
       "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|C:\\Users\\Nana\\source\\repos\\Financeiro teste\\forms\\frmdespesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:forms\\frmdespesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|c:\\users\\vivian.ssouza7\\source\\repos\\kamifinanceiro\\forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:forms\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|c:\\users\\vivian.ssouza7\\source\\repos\\kamifinanceiro\\database\\databasekamikami.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:database\\databasekamikami.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|c:\\users\\vivian.ssouza7\\source\\repos\\kamifinanceiro\\database\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:database\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|c:\\users\\vivian.ssouza7\\source\\repos\\kamifinanceiro\\models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:models\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\forms\\frmrelatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:forms\\frmrelatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\forms\\frmdespesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:forms\\frmdespesas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\forms\\frmvendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{60BEC82D-5A4B-4D30-8277-BFDBA26C7DA4}|Financeiro teste.csproj|solutionrelative:forms\\frmvendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> origin
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +83,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> origin
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,19 +95,30 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 1,
+>>>>>>> origin
               "Title": "FrmPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\FrmPrincipal.cs",
+<<<<<<< HEAD
               "ToolTip": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmPrincipal.cs*",
               "RelativeToolTip": "Forms\\FrmPrincipal.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAhAAAAAAAAAA==",
+=======
+              "ToolTip": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmPrincipal.cs",
+              "RelativeToolTip": "Forms\\FrmPrincipal.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAD4vzsAAAAAAAAAAAAAAA==",
+>>>>>>> origin
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T05:35:41.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "DataBaseKamiKami.cs",
               "DocumentMoniker": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\DataBase\\DataBaseKamiKami.cs",
@@ -107,22 +159,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 0,
+>>>>>>> origin
               "Title": "FrmPrincipal.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "Forms\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmPrincipal.cs [Projeto]*",
-              "RelativeToolTip": "Forms\\FrmPrincipal.cs [Projeto]*",
+              "ToolTip": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmPrincipal.cs [Projeto]",
+              "RelativeToolTip": "Forms\\FrmPrincipal.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T03:31:39.832Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+=======
+              "DocumentIndex": 2,
+              "Title": "DataBaseKamiKami.cs",
+              "DocumentMoniker": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\DataBase\\DataBaseKamiKami.cs",
+              "RelativeDocumentMoniker": "DataBase\\DataBaseKamiKami.cs",
+              "ToolTip": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\DataBase\\DataBaseKamiKami.cs",
+              "RelativeToolTip": "DataBase\\DataBaseKamiKami.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T05:30:19.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataBaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\DataBase\\DataBaseHelper.cs",
+              "RelativeDocumentMoniker": "DataBase\\DataBaseHelper.cs",
+              "ToolTip": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\DataBase\\DataBaseHelper.cs",
+              "RelativeToolTip": "DataBase\\DataBaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T04:50:21.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Produtos.cs",
+              "DocumentMoniker": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Models\\Produtos.cs",
+              "RelativeDocumentMoniker": "Models\\Produtos.cs",
+              "ToolTip": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Models\\Produtos.cs",
+              "RelativeToolTip": "Models\\Produtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T03:10:43.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+>>>>>>> origin
               "DocumentIndex": 5,
               "Title": "Form1.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Form1.cs [Projeto]",
+              "ToolTip": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Form1.cs [Projeto]",
               "RelativeToolTip": "Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T02:46:28.294Z",
@@ -132,9 +229,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "FrmRelatorios.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmRelatorios.cs",
+              "DocumentMoniker": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmRelatorios.cs",
               "RelativeDocumentMoniker": "Forms\\FrmRelatorios.cs",
-              "ToolTip": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmRelatorios.cs [Projeto]",
+              "ToolTip": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmRelatorios.cs [Projeto]",
               "RelativeToolTip": "Forms\\FrmRelatorios.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T03:33:03.292Z",
@@ -144,20 +241,24 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "FrmDespesas.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmDespesas.cs",
+              "DocumentMoniker": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmDespesas.cs",
               "RelativeDocumentMoniker": "Forms\\FrmDespesas.cs",
-              "ToolTip": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmDespesas.cs [Projeto]",
+              "ToolTip": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmDespesas.cs [Projeto]",
               "RelativeToolTip": "Forms\\FrmDespesas.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T03:32:40.214Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 7,
+=======
+              "DocumentIndex": 8,
+>>>>>>> origin
               "Title": "FrmVendas.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmVendas.cs",
+              "DocumentMoniker": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmVendas.cs",
               "RelativeDocumentMoniker": "Forms\\FrmVendas.cs",
-              "ToolTip": "C:\\Users\\Nana\\source\\repos\\Financeiro teste\\Forms\\FrmVendas.cs [Projeto]",
+              "ToolTip": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\Forms\\FrmVendas.cs [Projeto]",
               "RelativeToolTip": "Forms\\FrmVendas.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T03:32:21.945Z"
