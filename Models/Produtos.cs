@@ -6,8 +6,21 @@ using System.Threading.Tasks;
 
 namespace Financeiro_teste.Models
 {
-    public class Produtos
+    public partial class List
     {
+        List<ItemVenda> itensVenda = new List<ItemVenda>();
+        new Venda
+            Id,
+            Nome,
+            VendaId,
+            ProdutoId,
+            Quantidade,
+            PrecoUnitario;
+    }
+
+        
+    public class Produtos
+    {        
         public int Id { get; set; }
         public string Nome { get; set; }
         public decimal Preco { get; set; }
@@ -20,7 +33,6 @@ namespace Financeiro_teste.Models
         public int Id { get; set; }
         public DateTime DataHora { get; set; } 
         public List<ItemVenda> Itens { get; set; }
-        public decimal SubTotal { get; set; }
         public int ProdutoId { get; set; }
         public int Quantidade { get; set; }
         public decimal Total { get; set; }
@@ -31,6 +43,7 @@ namespace Financeiro_teste.Models
     public class ItemVenda
     {
         public int Id { get; set; }
+        public string Nome { get; set; }
         public int VendaId { get; set; }
         public int ProdutoId { get; set; }
         public int Quantidade { get; set; }

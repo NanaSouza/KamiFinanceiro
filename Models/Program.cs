@@ -9,33 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Financeiro_teste.Models
+namespace RestauranteYakissoba
 {
-    //static class Program
-    //{
-    //    [STAThread]
-    //    static void Main()
-    //    {
-    //        Application.EnableVisualStyles();
-    //        Application.SetCompatibleTextRenderingDefault(false);
-
-    //        // Inicializar banco de dados
-    //        DatabaseHelper db = new DatabaseHelper();
-
-    //        // Abrir formulário principal
-    //        Application.Run(new FrmPrincipal());
-    //    }
-    //}
-    public partial class Program : Form
+    static class Program
     {
-        public Program()
+        [STAThread]
+        static void Main()
         {
-            InitializeComponent();
-        }
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
 
-        private void Program_Load(object sender, EventArgs e)
-        {
+            // Inicializar banco de dados
+            DatabaseHelper db = new DatabaseHelper();
 
+            // Abrir formulário principal
+            Application.Run(new FrmPrincipal());
         }
     }
 }

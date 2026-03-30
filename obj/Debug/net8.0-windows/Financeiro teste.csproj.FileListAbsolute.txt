@@ -71,3 +71,4 @@ C:\Users\Nana\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro te
 C:\Users\Nana\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\ref\Financeiro teste.dll
 C:\Users\Nana\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro_teste.Program.resources
 C:\Users\Nana\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro_teste.Models.Program.resources
+C:\Users\Nana\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\RestauranteYakissoba.Program.resources

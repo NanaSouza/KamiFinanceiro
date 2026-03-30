@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Financeiro_teste.Models;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using MySql.Data.MySqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,12 +14,16 @@ namespace Financeiro_teste.Forms
 {
     public partial class FrmVendas : Form
     {
-        public FrmVendas(DatabaseHelper database)
-        {
+        private DatabaseHelper db;
+        private List<ItemVenda> itensVenda;
+
+        public FrmVendas (DatabaseHelper database)
+        {          
             db = database;
             itensVenda = new List<ItemVenda>();
-            InitializeComponent();
+            InitializeComponent();            
         }
+
         private void InitializaComponent()
         {
             btnAdicionar.Click += btnAdicionar_Click;
@@ -34,6 +39,9 @@ namespace Financeiro_teste.Forms
         {
             cbFormaPagamento.Items.AddRange(new string[] { "Dinheiro", "Cartão Débito", "Cartão Crédito", "Pix" });
             cbFormaPagamento.SelectedIndex = 0;
+
+            //Carregar produtos ao abrir o formulário
+            CarregarProdutos();
         }
         private void CarregarProdutos()
         {
@@ -65,22 +73,22 @@ namespace Financeiro_teste.Forms
             string nome = dgvProdutos.CurrentRow.Cells["Nome"].Value.ToString();
             decimal preco = Convert.ToDecimal(dgvProdutos.CurrentRow.Cells["Preco"].Value);
             int quantidade = (int)nudQuantidade.Value;
-            var itemExistente = itensVenda.FistOrDefault(i => i.ProdutoId == produtoId);
+            var itemExistente = itensVenda.FirstOrDefault(i => i.ProdutoId == produtoId);
 
             if (itemExistente != null)
             {
                 itemExistente.Quantidade += quantidade;
-                itemExistente.Subtotal = itemExistente.Quantidade * itemExistente.PrecoUnitario;
+                itemExistente.Total = itemExistente.Quantidade * itemExistente.PrecoUnitario;
             }
             else
             {
                 itensVenda.Add(new ItemVenda
                 {
                     ProdutoId = produtoId,
-                    NomeProduto = nome,
+                    Nome = nome,
                     PrecoUnitario = preco,
                     Quantidade = quantidade,
-                    Subtotal = preco * quantidade
+                    Total = preco * quantidade
                 });
             }
             AtualizarCarrinho();
@@ -91,19 +99,19 @@ namespace Financeiro_teste.Forms
             dgvCarrinho.DataSource = null;
             dgvCarrinho.DataSource = itensVenda.Select(i => new
             {
-                i.ProdutoNome,
+                Produto = i.Nome,
                 i.Quantidade,
                 i.PrecoUnitario,
-                i.Subtotal
+                i.Total
             }).ToList();
 
-            dgvCarrinho.Columns["ProdutoNome"].HeaderText = "Produto";
+            dgvCarrinho.Columns["Produto"].HeaderText = "Produto";
             dgvCarrinho.Columns["PrecoUnitario"].HeaderText = "Preço Unitário";
             dgvCarrinho.Columns["Subtotal"].HeaderText = "Subtotal";
             dgvCarrinho.Columns["PrecoUnitario"].DefaultCellStyle.Format = "C2";
             dgvCarrinho.Columns["Subtotal"].DefaultCellStyle.Format = "C2";
 
-            decimal total = itensVenda.Sum(i => i.Subtotal);
+            decimal total = itensVenda.Sum(i => i.Total);
             lblTotal.Text = $"Total: {total:C2}";
         }
 
@@ -123,7 +131,7 @@ namespace Financeiro_teste.Forms
                 return;
             }
 
-            decimal total = itensVenda.Sum(i => i.Subtotal);
+            decimal total = itensVenda.Sum(i => i.Total);
 
             DialogResult result = MessageBox.Show($"Confirmar venda no valor de {total:C2}?", "Confirmar Venda", 
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -143,7 +151,7 @@ namespace Financeiro_teste.Forms
                 { 
                     try 
                     {
-                        decimal total = itensVenda.Sum(i => i.Subtotal);
+                        decimal total = itensVenda.Sum(i => i.Total);
                         //Inserir Venda
                         string sqlVenda = @"INSERT INTO Vendas (DataHora, Total, FormaPagamento, Status) 
                                             VALUES (@DataHora, @Total, @FormaPagamento, @Status);
