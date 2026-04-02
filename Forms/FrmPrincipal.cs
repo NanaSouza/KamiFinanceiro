@@ -17,7 +17,7 @@ namespace Financeiro_teste.Forms
 
         public FrmPrincipal()
         {
-            InitializeComponent();
+            InitializaComponent();
             db = new DatabaseHelper();
             CarregarSaldoAtual();
         }

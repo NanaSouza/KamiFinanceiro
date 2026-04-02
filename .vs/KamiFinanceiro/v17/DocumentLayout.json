@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Nana\\source\\repos\\KamiFinanceiro\\",
+  "WorkspaceRootPath": "C:\\Users\\vivian.ssouza7\\source\\repos\\KamiFinanceiro\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -14,6 +14,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

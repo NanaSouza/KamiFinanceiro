@@ -15,11 +15,10 @@ namespace Financeiro_teste.DataBase
 
         private static string connectionString = $"Server={host};Database={database};Uid={user};Pwd={password};";
 
-
         /// <summary>
         /// Tenta estabelecer a conexão com o banco.
         /// </summary>
-        public static MySqlConnection GetConnection()
+        private static MySqlConnection GetConnection()
         {
             return new MySqlConnection(connectionString);
         }

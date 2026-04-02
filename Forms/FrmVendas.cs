@@ -21,7 +21,7 @@ namespace Financeiro_teste.Forms
         {          
             db = database;
             itensVenda = new List<ItemVenda>();
-            InitializeComponent();            
+            InitializaComponent();            
         }
 
         private void InitializaComponent()
@@ -43,11 +43,11 @@ namespace Financeiro_teste.Forms
             //Carregar produtos ao abrir o formulário
             CarregarProdutos();
         }
-        private void CarregarProdutos()
+        public void CarregarProdutos()
         {
             string sql = "SELECT Id, Nome, Preco, Estoque FROM Produtos WHERE Estoque >= 0";
             DataTable dt = new DataTable();
-            using (var conn = new MySqlConnection(db.ConnectionString))
+            using (var conn = new MySqlConnection("Data Source=restaurante.db;Version=3;"))
             {
                 conn.Open();
                 using (var cmd = new MySqlCommand(sql, conn))
@@ -144,7 +144,7 @@ namespace Financeiro_teste.Forms
 
         private void SalvarVenda()
         {
-            using (var conn = new MySqlConnection(db.ConnectionString))
+            using (var conn = new MySqlConnection("Data Source=restaurante.db;Version=3;"))
             {
                 conn.Open();
                 using (var transaction = conn.BeginTransaction())

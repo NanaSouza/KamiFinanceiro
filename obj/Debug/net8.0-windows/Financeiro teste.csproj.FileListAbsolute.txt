@@ -72,3 +72,18 @@ C:\Users\Nana\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\ref\Financeir
 C:\Users\Nana\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro_teste.Program.resources
 C:\Users\Nana\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro_teste.Models.Program.resources
 C:\Users\Nana\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\RestauranteYakissoba.Program.resources
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro teste.csproj.AssemblyReference.cache
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro_teste.Forms.FrmDespesas.resources
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro_teste.Forms.FrmPrincipal.resources
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro_teste.Forms.FrmRelatorios.resources
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro_teste.Forms.FrmVendas.resources
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\RestauranteYakissoba.Program.resources
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro teste.csproj.GenerateResource.cache
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro teste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro teste.AssemblyInfoInputs.cache
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro teste.AssemblyInfo.cs
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro teste.csproj.CoreCompileInputs.cache
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro teste.sourcelink.json
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro teste.dll
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\refint\Financeiro teste.dll
+C:\Users\vivian.ssouza7\Source\Repos\KamiFinanceiro\obj\Debug\net8.0-windows\Financeiro teste.pdb

@@ -36,16 +36,16 @@
             txtDescricao = new TextBox();
             cbCategoria = new ComboBox();
             nudValor = new NumericUpDown();
-            bgCadastro = new GroupBox();
+            gbCadastro = new GroupBox();
+            lblFormaPagamento = new Label();
+            lblDescricao = new Label();
+            lblValor = new Label();
             lblCategoria = new Label();
             lblData = new Label();
-            lblValor = new Label();
-            lblDescricao = new Label();
-            lblFormaPagamento = new Label();
             gbListagem = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)dgvDespesas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudValor).BeginInit();
-            bgCadastro.SuspendLayout();
+            gbCadastro.SuspendLayout();
             gbListagem.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,6 +57,7 @@
             btnSalvar.TabIndex = 0;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnCancelar
             // 
@@ -72,7 +73,7 @@
             dgvDespesas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDespesas.Location = new Point(6, 22);
             dgvDespesas.Name = "dgvDespesas";
-            dgvDespesas.Size = new Size(287, 287);
+            dgvDespesas.Size = new Size(287, 277);
             dgvDespesas.TabIndex = 2;
             // 
             // cbFormaPagamento
@@ -112,26 +113,53 @@
             nudValor.Size = new Size(87, 23);
             nudValor.TabIndex = 7;
             // 
-            // bgCadastro
+            // gbCadastro
             // 
-            bgCadastro.Controls.Add(lblFormaPagamento);
-            bgCadastro.Controls.Add(lblDescricao);
-            bgCadastro.Controls.Add(lblValor);
-            bgCadastro.Controls.Add(lblCategoria);
-            bgCadastro.Controls.Add(lblData);
-            bgCadastro.Controls.Add(nudValor);
-            bgCadastro.Controls.Add(dtpData);
-            bgCadastro.Controls.Add(cbFormaPagamento);
-            bgCadastro.Controls.Add(cbCategoria);
-            bgCadastro.Controls.Add(btnCancelar);
-            bgCadastro.Controls.Add(txtDescricao);
-            bgCadastro.Controls.Add(btnSalvar);
-            bgCadastro.Location = new Point(12, 5);
-            bgCadastro.Name = "bgCadastro";
-            bgCadastro.Size = new Size(217, 309);
-            bgCadastro.TabIndex = 8;
-            bgCadastro.TabStop = false;
-            bgCadastro.Text = "Nova Despesa";
+            gbCadastro.Controls.Add(lblFormaPagamento);
+            gbCadastro.Controls.Add(lblDescricao);
+            gbCadastro.Controls.Add(lblValor);
+            gbCadastro.Controls.Add(lblCategoria);
+            gbCadastro.Controls.Add(lblData);
+            gbCadastro.Controls.Add(nudValor);
+            gbCadastro.Controls.Add(dtpData);
+            gbCadastro.Controls.Add(cbFormaPagamento);
+            gbCadastro.Controls.Add(cbCategoria);
+            gbCadastro.Controls.Add(btnCancelar);
+            gbCadastro.Controls.Add(txtDescricao);
+            gbCadastro.Controls.Add(btnSalvar);
+            gbCadastro.Location = new Point(12, 5);
+            gbCadastro.Name = "gbCadastro";
+            gbCadastro.Size = new Size(217, 309);
+            gbCadastro.TabIndex = 8;
+            gbCadastro.TabStop = false;
+            gbCadastro.Text = "Nova Despesa";
+            // 
+            // lblFormaPagamento
+            // 
+            lblFormaPagamento.AutoSize = true;
+            lblFormaPagamento.Location = new Point(6, 156);
+            lblFormaPagamento.Name = "lblFormaPagamento";
+            lblFormaPagamento.Size = new Size(105, 15);
+            lblFormaPagamento.TabIndex = 12;
+            lblFormaPagamento.Text = "Forma Pagamento";
+            // 
+            // lblDescricao
+            // 
+            lblDescricao.AutoSize = true;
+            lblDescricao.Location = new Point(6, 200);
+            lblDescricao.Name = "lblDescricao";
+            lblDescricao.Size = new Size(58, 15);
+            lblDescricao.TabIndex = 11;
+            lblDescricao.Text = "Descrição";
+            // 
+            // lblValor
+            // 
+            lblValor.AutoSize = true;
+            lblValor.Location = new Point(6, 112);
+            lblValor.Name = "lblValor";
+            lblValor.Size = new Size(33, 15);
+            lblValor.TabIndex = 10;
+            lblValor.Text = "Valor";
             // 
             // lblCategoria
             // 
@@ -151,39 +179,12 @@
             lblData.TabIndex = 8;
             lblData.Text = "Data: ";
             // 
-            // lblValor
-            // 
-            lblValor.AutoSize = true;
-            lblValor.Location = new Point(6, 112);
-            lblValor.Name = "lblValor";
-            lblValor.Size = new Size(33, 15);
-            lblValor.TabIndex = 10;
-            lblValor.Text = "Valor";
-            // 
-            // lblDescricao
-            // 
-            lblDescricao.AutoSize = true;
-            lblDescricao.Location = new Point(6, 200);
-            lblDescricao.Name = "lblDescricao";
-            lblDescricao.Size = new Size(58, 15);
-            lblDescricao.TabIndex = 11;
-            lblDescricao.Text = "Descrição";
-            // 
-            // lblFormaPagamento
-            // 
-            lblFormaPagamento.AutoSize = true;
-            lblFormaPagamento.Location = new Point(6, 156);
-            lblFormaPagamento.Name = "lblFormaPagamento";
-            lblFormaPagamento.Size = new Size(105, 15);
-            lblFormaPagamento.TabIndex = 12;
-            lblFormaPagamento.Text = "Forma Pagamento";
-            // 
             // gbListagem
             // 
             gbListagem.Controls.Add(dgvDespesas);
             gbListagem.Location = new Point(235, 5);
             gbListagem.Name = "gbListagem";
-            gbListagem.Size = new Size(299, 461);
+            gbListagem.Size = new Size(299, 309);
             gbListagem.TabIndex = 9;
             gbListagem.TabStop = false;
             gbListagem.Text = "Despesas Registradas";
@@ -192,15 +193,16 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(546, 478);
+            ClientSize = new Size(546, 323);
             Controls.Add(gbListagem);
-            Controls.Add(bgCadastro);
+            Controls.Add(gbCadastro);
             Name = "FrmDespesas";
             Text = "FrmDespesas";
+            Load += FrmDespesas_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDespesas).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudValor).EndInit();
-            bgCadastro.ResumeLayout(false);
-            bgCadastro.PerformLayout();
+            gbCadastro.ResumeLayout(false);
+            gbCadastro.PerformLayout();
             gbListagem.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -215,7 +217,7 @@
         private TextBox txtDescricao;
         private ComboBox cbCategoria;
         private NumericUpDown nudValor;
-        private GroupBox bgCadastro;
+        private GroupBox gbCadastro;
         private Label lblCategoria;
         private Label lblData;
         private Label lblFormaPagamento;
