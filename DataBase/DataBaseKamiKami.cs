@@ -5,7 +5,7 @@ using MySql.Data.MySqlClient; // Certifique-se de ter instalado o pacote MySql.D
 public class DatabaseHelper
 {
     // Configurações do XAMPP
-    private string connectionString = "Server=localhost;Database=db_restaurante_yakissoba;Uid=root;Pwd=;";
+    private string connectionString = "Server=localhost;Database=kamikami;Uid=root;Pwd=;";
 
     public DatabaseHelper()
     {

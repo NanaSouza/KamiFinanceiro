@@ -21,10 +21,11 @@ namespace Financeiro_teste.Forms
         {          
             db = database;
             itensVenda = new List<ItemVenda>();
-            InitializaComponent();            
+            InitializeComponent();
+            ConfigurarLayoutManual();
         }
 
-        private void InitializaComponent()
+        private void ConfigurarLayoutManual()
         {
             btnAdicionar.Click += btnAdicionar_Click;
             btnFinalizar.Click += btnFinalizar_Click;
@@ -45,9 +46,9 @@ namespace Financeiro_teste.Forms
         }
         public void CarregarProdutos()
         {
-            string sql = "SELECT Id, Nome, Preco, Estoque FROM Produtos WHERE Estoque >= 0";
+            string sql = "SELECT Id, Nome, Preco, Categoria FROM Produtos WHERE Estoque >= 0";
             DataTable dt = new DataTable();
-            using (var conn = new MySqlConnection("Data Source=restaurante.db;Version=3;"))
+            using (var conn = new MySqlConnection("Server=localhost;Database=kamikami;Uid=root;Pwd=;"))
             {
                 conn.Open();
                 using (var cmd = new MySqlCommand(sql, conn))

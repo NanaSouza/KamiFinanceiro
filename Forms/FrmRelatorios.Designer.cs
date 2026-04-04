@@ -81,27 +81,27 @@
             lblTotalVendas.AutoSize = true;
             lblTotalVendas.Location = new Point(12, 79);
             lblTotalVendas.Name = "lblTotalVendas";
-            lblTotalVendas.Size = new Size(73, 15);
+            lblTotalVendas.Size = new Size(75, 15);
             lblTotalVendas.TabIndex = 4;
-            lblTotalVendas.Text = "Total Vendas";
+            lblTotalVendas.Text = "Total Vendas:";
             // 
             // lblTotalDespesas
             // 
             lblTotalDespesas.AutoSize = true;
             lblTotalDespesas.Location = new Point(12, 17);
             lblTotalDespesas.Name = "lblTotalDespesas";
-            lblTotalDespesas.Size = new Size(84, 15);
+            lblTotalDespesas.Size = new Size(86, 15);
             lblTotalDespesas.TabIndex = 5;
-            lblTotalDespesas.Text = "Total Despesas";
+            lblTotalDespesas.Text = "Total Despesas:";
             // 
             // lblLucro
             // 
             lblLucro.AutoSize = true;
             lblLucro.Location = new Point(12, 45);
             lblLucro.Name = "lblLucro";
-            lblLucro.Size = new Size(37, 15);
+            lblLucro.Size = new Size(40, 15);
             lblLucro.TabIndex = 6;
-            lblLucro.Text = "Lucro";
+            lblLucro.Text = "Lucro:";
             // 
             // lblInicio
             // 

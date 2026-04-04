@@ -20,9 +20,10 @@ namespace Financeiro_teste.Forms
             db = database;
             InitializeComponent();
             CarregarDespesas();
+            ConfigurarLayoutManual();
         }
 
-        private void initializeComponent()
+        private void ConfigurarLayoutManual()
         {
             this.Text = "Registrar Despesas - KamiKami";
             gbCadastro.Controls.AddRange(new Control[] { lblData, dtpData, lblCategoria, cbCategoria, lblDescricao, txtDescricao, lblValor, nudValor, lblFormaPagamento, cbFormaPagamento, btnSalvar, btnCancelar });
@@ -43,7 +44,7 @@ namespace Financeiro_teste.Forms
             string sql = "SELECT Id, Descricao, Valor, Categoria, FormaPagamento, Data FROM Despesas ORDER BY Data DESC";
             DataTable dt = new DataTable();
 
-            using (var conn = new MySqlConnection("Data Source=restaurante.db;Version=3;"))
+            using (var conn = new MySqlConnection("Server=localhost;Database=kamikami;Uid=root;Pwd=;"))
             {
                 conn.Open();
                 using (var cmd = new MySqlCommand(sql, conn))
@@ -77,9 +78,9 @@ namespace Financeiro_teste.Forms
                 return;
             }
             string sql = @"INSERT INTO Despesas (Data, Categoria, Descricao, Valor, FormaPagamento)
-                           VALUES (@Data, @Categoria, @Descricao, @Valor, @Pagamento)";    
+                           VALUES (@Data, @Categoria, @Descricao, @Valor, @Pagamento)";
 
-            using (var conn = new MySqlConnection("Data Source=restaurante.db;Version=3;"))
+            using (var conn = new MySqlConnection("Server=localhost;Database=kamikami;Uid=root;Pwd=;"))
             {
                 conn.Open();
                 using (var cmd = new MySqlCommand(sql, conn))
@@ -102,6 +103,11 @@ namespace Financeiro_teste.Forms
             cbFormaPagamento.SelectedIndex = -1;
 
             CarregarDespesas();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

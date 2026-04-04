@@ -37,7 +37,11 @@
             Despesas = new Button();
             HistoricoVendas = new Button();
             Relatorios = new Button();
+            lblSaldo = new Label();
+            lblValorSald = new Label();
+            panelResumo = new Panel();
             menuStrip1.SuspendLayout();
+            panelResumo.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -45,7 +49,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { vendasToolStripMenuItem, toolStripMenuItem1, financeiroToolStripMenuItem, sairToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(272, 24);
+            menuStrip1.Size = new Size(640, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -74,7 +78,7 @@
             // 
             // NovaVenda
             // 
-            NovaVenda.Location = new Point(71, 88);
+            NovaVenda.Location = new Point(246, 93);
             NovaVenda.Name = "NovaVenda";
             NovaVenda.Size = new Size(151, 47);
             NovaVenda.TabIndex = 1;
@@ -84,7 +88,7 @@
             // 
             // Despesas
             // 
-            Despesas.Location = new Point(71, 272);
+            Despesas.Location = new Point(246, 222);
             Despesas.Name = "Despesas";
             Despesas.Size = new Size(151, 44);
             Despesas.TabIndex = 2;
@@ -94,7 +98,7 @@
             // 
             // HistoricoVendas
             // 
-            HistoricoVendas.Location = new Point(71, 178);
+            HistoricoVendas.Location = new Point(25, 220);
             HistoricoVendas.Name = "HistoricoVendas";
             HistoricoVendas.Size = new Size(151, 46);
             HistoricoVendas.TabIndex = 3;
@@ -104,7 +108,7 @@
             // 
             // Relatorios
             // 
-            Relatorios.Location = new Point(71, 363);
+            Relatorios.Location = new Point(450, 222);
             Relatorios.Name = "Relatorios";
             Relatorios.Size = new Size(151, 45);
             Relatorios.TabIndex = 4;
@@ -112,11 +116,39 @@
             Relatorios.UseVisualStyleBackColor = true;
             Relatorios.Click += Relatorios_Click;
             // 
+            // lblSaldo
+            // 
+            lblSaldo.AutoSize = true;
+            lblSaldo.Location = new Point(3, 18);
+            lblSaldo.Name = "lblSaldo";
+            lblSaldo.Size = new Size(39, 15);
+            lblSaldo.TabIndex = 5;
+            lblSaldo.Text = "Saldo:";
+            // 
+            // lblValorSald
+            // 
+            lblValorSald.AutoSize = true;
+            lblValorSald.Location = new Point(6, 46);
+            lblValorSald.Name = "lblValorSald";
+            lblValorSald.Size = new Size(36, 15);
+            lblValorSald.TabIndex = 6;
+            lblValorSald.Text = "Valor:";
+            // 
+            // panelResumo
+            // 
+            panelResumo.Controls.Add(lblSaldo);
+            panelResumo.Controls.Add(lblValorSald);
+            panelResumo.Location = new Point(12, 40);
+            panelResumo.Name = "panelResumo";
+            panelResumo.Size = new Size(129, 79);
+            panelResumo.TabIndex = 7;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(272, 450);
+            ClientSize = new Size(640, 356);
+            Controls.Add(panelResumo);
             Controls.Add(Relatorios);
             Controls.Add(HistoricoVendas);
             Controls.Add(Despesas);
@@ -127,6 +159,8 @@
             Text = "FrmPrincipal";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            panelResumo.ResumeLayout(false);
+            panelResumo.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -142,5 +176,8 @@
         private Button HistoricoVendas;
         private Button Relatorios;
         private ToolStripMenuItem sairToolStripMenuItem;
+        private Label lblSaldo;
+        private Label lblValorSald;
+        private Panel panelResumo;
     }
 }

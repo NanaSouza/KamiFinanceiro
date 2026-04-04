@@ -17,11 +17,12 @@ namespace Financeiro_teste.Forms
 
         public FrmPrincipal()
         {
-            InitializaComponent();
+            InitializeComponent();
             db = new DatabaseHelper();
+            ConfigurarLayoutManual();
             CarregarSaldoAtual();
         }
-        private void InitializaComponent()
+        private void ConfigurarLayoutManual()
         {
             this.Text = "Sistema Financeiro - KamiKami";
             this.WindowState = FormWindowState.Maximized;
@@ -61,7 +62,7 @@ namespace Financeiro_teste.Forms
             ToolStripMenuItem menuSair = new ToolStripMenuItem("Sair");
             menuSair.Click += (s, e) => Application.Exit();
 
-            menuSair.DropDownItems.AddRange(new ToolStripMenuItem[] { menuVendas, menuFinanceiro, menuSair });
+            menuSair.DropDownItems.AddRange(new ToolStripMenuItem[] { menuVendas, menuFinanceiro});
 
             //Painel de Resumo 
 
