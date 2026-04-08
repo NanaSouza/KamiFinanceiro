@@ -66,32 +66,32 @@ namespace Financeiro_teste.Forms
 
             //Painel de Resumo 
 
-            Panel panelResumo = new Panel();
-            {
-                Dock = DockStyle.Top;
-                Height = 150;
-                BackColor = System.Drawing.Color.LightSteelBlue;
-            }
+            //Panel panelResumo = new Panel();
+            //{
+            //    Dock = DockStyle.Top;
+            //    Height = 150;
+            //    BackColor = System.Drawing.Color.LightSteelBlue;
+            //}
 
-            Label lblSaldo = new Label();
-            {
-                Text = "SALDO ATUAL";
-                Font = new System.Drawing.Font("Arial", 14, System.Drawing.FontStyle.Bold);
-                Location = new System.Drawing.Point(20, 20);
-                AutoSize = true;
-            }
+            //Label lblSaldo = new Label();
+            //{
+            //    Text = "SALDO ATUAL";
+            //    Font = new System.Drawing.Font("Arial", 14, System.Drawing.FontStyle.Bold);
+            //    Location = new System.Drawing.Point(20, 20);
+            //    AutoSize = true;
+            //}
 
-            Label lblValorSaldo = new Label();
-            {
-                Text = saldoAtual.ToString("C");
-                Font = new System.Drawing.Font("Arial", 24, System.Drawing.FontStyle.Bold);
-                Location = new System.Drawing.Point(20, 60);
-                AutoSize = true;
-                ForeColor = saldoAtual >= 0 ? System.Drawing.Color.Green : System.Drawing.Color.Red;
-            }
+            //Label lblValorSaldo = new Label();
+            //{
+            //    Text = saldoAtual.ToString("C");
+            //    Font = new System.Drawing.Font("Arial", 24, System.Drawing.FontStyle.Bold);
+            //    Location = new System.Drawing.Point(20, 60);
+            //    AutoSize = true;
+            //    ForeColor = saldoAtual >= 0 ? System.Drawing.Color.Green : System.Drawing.Color.Red;
+            //}
 
-            panelResumo.Controls.AddRange(new Control[] { lblSaldo, lblValorSaldo });
-            this.Controls.Add(panelResumo);
+            //panelResumo.Controls.AddRange(new Control[] { lblSaldo, lblValorSaldo });
+            //this.Controls.Add(panelResumo);
         }
 
         private void CarregarSaldoAtual()
